@@ -1,0 +1,45 @@
+/* Tampilan lebih datar. Jangan mengubah warna teks tombol. */
+:root {
+    --bs-primary: #1f4e79;
+    --bs-primary-rgb: 31, 78, 121;
+    --bs-link-color: #1f4e79;
+    --bs-link-hover-color: #16375a;
+}
+
+body {
+    background: #f3f4f6;
+    color: #222;
+}
+
+.navbar,
+.navbar-gradient {
+    background: #fff !important;
+    border-bottom: 1px solid #d0d5dd !important;
+    box-shadow: none !important;
+}
+
+.nav-link::after,
+.nav-link:hover::after,
+.nav-link.active::after {
+    display: none !important;
+    content: none !important;
+}
+
+/* Hanya latar gradient yang didatarkan. Warna tulisan tombol tetap putih. */
+.btn[style*="linear-gradient"],
+.btn[style*="#0f766e"],
+.btn[style*="rgb(88, 41, 150)"],
+.btn[style*="rgb(88,41,150)"],
+a.btn[style*="linear-gradient"],
+input.btn[style*="rgb(88"] {
+    background: #1f4e79 !important;
+    background-image: none !important;
+    color: #fff !important;
+    border-color: #1f4e79 !important;
+}
+
+div[style*="linear-gradient"],
+[class*="modal-header"][style*="linear-gradient"] {
+    background: #1f4e79 !important;
+    background-image: none !important;
+}
